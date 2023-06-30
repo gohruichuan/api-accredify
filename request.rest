@@ -4,6 +4,18 @@ Content-Type: application/json
 {
     "username": "geraldgoh@gmail.com"
 }
+
+###
+
+GET http://localhost:4000/document-module/identities/1/documents?page=1&sortBy=DESC
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiZ2VyYWxkZ29oQGdtYWlsLmNvbSIsImlhdCI6MTY4ODExODc2MX0.gAkICAZ-lODJ5ozD1PeKwuZR_CUC1eBj40zChCE3MRk
+
+###
+
+GET http://localhost:4000/document-module/identities/1/documents?page=1&sortBy=ASC
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiZ2VyYWxkZ29oQGdtYWlsLmNvbSIsImlhdCI6MTY4ODExODc2MX0.gAkICAZ-lODJ5ozD1PeKwuZR_CUC1eBj40zChCE3MRk
+
+
 ###
 
 GET http://localhost:4000/document-module/identities/1/documents?page=1
