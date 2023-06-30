@@ -119,7 +119,6 @@ router.get("/:docCategory/documents", auth, (req, res) => {
 
   // pageNo query param (optional)
   const pageNo = parseInt(req.query.page);
-  console.log("pageNo ", pageNo);
 
   if (!docCategory) {
     res.status(401);
@@ -138,23 +137,15 @@ router.get("/:docCategory/documents", auth, (req, res) => {
     res.send(`No records found`);
     return res;
   }
-  console.log("docsDataRes ", docsDataRes);
-
   const pageIndexTo = pageNo === 1 ? 0 : (pageNo - 1) * queryLimit;
-  console.log("pageIndexTo ", pageIndexTo);
-
   const pageIndexFrom =
     pageIndexTo === 0 ? queryLimit : pageIndexTo + queryLimit;
 
-  console.log("pageIndexFrom ", pageIndexFrom);
-
-  const test = docsDataRes.slice(
+  const resData = docsDataRes.slice(
     pageIndexTo ? pageIndexTo : 0,
     pageIndexFrom ? pageIndexFrom : queryLimit
   );
-  console.log("test ", test);
-
-  res.json(test);
+  res.json(resData);
 });
 
 module.exports = router;
