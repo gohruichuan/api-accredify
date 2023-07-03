@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const jwt = require("jsonwebtoken");
+const auth = require("../middleware/auth");
 
 const router = new express.Router();
 
@@ -33,6 +34,11 @@ router.post("/", (req, res) => {
   const jwtToken = jwt.sign(userDetails, process.env.JWT_PRIVATE_KEY);
 
   res.json({ jwtToken: jwtToken, userDetails: userDetails });
+});
+
+router.get("/verify", auth, (req, res) => {
+  const userDetails = req.user;
+  res.json({ userDetails: userDetails });
 });
 
 module.exports = router;
