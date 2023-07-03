@@ -10,6 +10,7 @@ const userData = [
   {
     userId: 1, // PK
     username: "geraldgoh@gmail.com", // PK
+    name: "Gerald Goh",
   },
 ];
 
@@ -28,9 +29,7 @@ router.post("/", (req, res) => {
     res.send("User not found");
     return res;
   }
-  const userId = userRecord[0].userId;
-
-  const userDetails = { userId: userId, username: username };
+  const userDetails = userRecord[0];
   const jwtToken = jwt.sign(userDetails, process.env.JWT_PRIVATE_KEY);
 
   res.json({ jwtToken: jwtToken, userDetails: userDetails });
