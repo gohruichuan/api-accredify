@@ -32,8 +32,7 @@ router.post("/", (req, res) => {
   const userDetails = { userId: userId, username: username };
   const jwtToken = jwt.sign(userDetails, process.env.JWT_PRIVATE_KEY);
 
-  res.json({ jwtToken: jwtToken });
-  // res.sendStatus(200).json({ jwtToken: jwtToken });
+  res.json({ jwtToken: jwtToken, userDetails: userDetails });
 });
 
 module.exports = router;
