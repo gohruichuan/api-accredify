@@ -71,6 +71,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZ
 
 ```
 
+## Documents API - Query Params (Optional)
+
 ### /document-module/identities/1/documents?page=2
 
 To get logged in user's documents by pages (query params)
