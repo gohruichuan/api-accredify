@@ -16,4 +16,4 @@ app.use("/login", login);
 app.use("/document-module/identities", documents);
 app.use("/career-goals", careerGoals);
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
