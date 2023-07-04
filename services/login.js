@@ -11,6 +11,13 @@ const userData = [
     userId: 1, // PK
     username: "geraldgoh@gmail.com", // PK
     name: "Gerald Goh",
+    isPersonal: true,
+  },
+  {
+    userId: 2, // PK
+    username: "batmantan@gmail.com", // PK
+    name: "Batman Tan",
+    isPersonal: false,
   },
 ];
 
