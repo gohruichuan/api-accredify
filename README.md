@@ -36,6 +36,7 @@ To login user, validate user credentials, and get user data from database along 
 
 ```
 POST https://api-accredify-d799d4385f74.herokuapp.com/login
+
 Content-Type: application/json
 
 {
@@ -49,6 +50,7 @@ To login user by verifying JWT token, get user data from database and send back 
 
 ```
 POST https://api-accredify-d799d4385f74.herokuapp.com/login
+
 Content-Type: application/json
 
 {
@@ -75,6 +77,7 @@ To get logged in user's documents by pages (query params)
 
 ```
 GET https://api-accredify-d799d4385f74.herokuapp.com/document-module/identities/1/documents?page=2
+
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiZ2VyYWxkZ29oQGdtYWlsLmNvbSIsImlhdCI6MTY4ODExODc2MX0.gAkICAZ-lODJ5ozD1PeKwuZR_CUC1eBj40zChCE3MRk
 ```
 
@@ -84,6 +87,7 @@ To get logged in user's documents by pages and ascending order (query params)
 
 ```
 GET https://api-accredify-d799d4385f74.herokuapp.com/document-module/identities/1/documents?page=1&sortBy=ASC
+
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiZ2VyYWxkZ29oQGdtYWlsLmNvbSIsImlhdCI6MTY4ODExODc2MX0.gAkICAZ-lODJ5ozD1PeKwuZR_CUC1eBj40zChCE3MRk
 
 ```
@@ -94,6 +98,7 @@ To get logged in user's documents by pages and descending order (query params)
 
 ```
 GET https://api-accredify-d799d4385f74.herokuapp.com/document-module/identities/1/documents?page=1&sortBy=DESC
+
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiZ2VyYWxkZ29oQGdtYWlsLmNvbSIsImlhdCI6MTY4ODExODc2MX0.gAkICAZ-lODJ5ozD1PeKwuZR_CUC1eBj40zChCE3MRk
 
 ```
@@ -106,5 +111,6 @@ To get logged in user's career-goals
 
 ```
 GET https://api-accredify-d799d4385f74.herokuapp.com/career-goals
+
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiZ2VyYWxkZ29oQGdtYWlsLmNvbSIsImlhdCI6MTY4ODExODc2MX0.gAkICAZ-lODJ5ozD1PeKwuZR_CUC1eBj40zChCE3MRk
 ```
