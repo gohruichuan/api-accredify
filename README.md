@@ -20,10 +20,6 @@ yarn start
 # Rename sample.env to .env
 ```
 
-# Backend Nodejs API
-
-See [Nodejs repo here](https://github.com/gohruichuan/api-accredify-assignment).
-
 ## API Architecture
 
 See [API Architecture](https://miro.com/app/board/uXjVM6G5dI4=/?share_link_id=800805685663).
