@@ -14,10 +14,13 @@ yarn install
 yarn start
 ```
 
-### !!!IMPORTANT ENV VARIABLE (FOR LOCAL)
+### !!!IMPORTANT ENV VARIABLE (FOR LOCAL ONLY)
 
 ```
 # Rename sample.env to .env
+
+# Or create a .env file and put the following:
+JWT_PRIVATE_KEY =5eff8bc2fb1989ac83b0524123c6a4e126f109dd5e2d982279b432090a3db6caa5361929462cbb8e9aca6f855b7fa89b56b923300f3326095a1456b792856625
 ```
 
 ## API Architecture
@@ -69,7 +72,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZ
 
 ## Documents API - Query Params (Optional)
 
-### /document-module/identities/1/documents?page=2
+### ?page=2
 
 To get logged in user's documents by pages (query params)
 
@@ -79,7 +82,7 @@ GET https://api-accredify-d799d4385f74.herokuapp.com/document-module/identities/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiZ2VyYWxkZ29oQGdtYWlsLmNvbSIsImlhdCI6MTY4ODExODc2MX0.gAkICAZ-lODJ5ozD1PeKwuZR_CUC1eBj40zChCE3MRk
 ```
 
-### /document-module/identities/1/documents?page=1&sortBy=ASC
+### ?page=1&sortBy=ASC
 
 To get logged in user's documents by pages and ascending order (query params)
 
@@ -90,7 +93,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZ
 
 ```
 
-### /document-module/identities/1/documents?page=1&sortBy=DESC
+### ?page=1&sortBy=DESC
 
 To get logged in user's documents by pages and descending order (query params)
 
